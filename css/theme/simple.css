@@ -1,5 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@font-face{ font-family: bebas; font-weight:normal; src:url('../../fonts/BebasNeue.otf');}
+@font-face{ font-family: novecento; font-weight:normal; src:url('../../fonts/Novecentosanswide-DemiBold.otf');}
+@font-face{ font-family: novecento; font-weight:bold; src:url('../../fonts/Novecentosanswide-Bold.otf');}
+@font-face{ font-family: daum; font-weight:normal; src:url('../../fonts/Daum_Regular.ttf');}
+@font-face{ font-family: daum; font-weight:bold; src:url('../../fonts/Daum_SemiBold.ttf');}
+@font-face{ font-family: nanum; font-weight:normal; src:url('../../fonts/NanumGothic.ttf');}
+@font-face{ font-family: nanum; font-weight:bold; src:url('../../fonts/NanumGothicBold.ttf');}
+@font-face{ font-family: nanum_bold; src:url('../../fonts/NanumGothicBold.ttf');}
+@font-face{ font-family: monaco; src:url('../../fonts/MONACO.TTF');}
 /**
  * A simple theme for reveal.js presentations, similar
  * to the default theme. The accent color is darkblue.
@@ -15,7 +24,7 @@ body {
   background-color: white; }
 
 .reveal {
-  font-family: 'Gentium Book Basic', 'Nanum Gothic','Malgun Gothic','맑은고딕','돋움',dotum,'Myriad Pro',Arial,'Sans Serif';
+  font-family: 'Daum', daum, sans-serif;
   font-size: 36px;
   font-weight: normal;
   letter-spacing: -0.02em;

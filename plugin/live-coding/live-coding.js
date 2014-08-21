@@ -5,7 +5,7 @@
 var LiveCoding = (function() {
     
     // All <code> with ".liveCoding" class
-    var codeElementList = document.querySelectorAll('code.liveCoding');
+    var codeElementList = document.querySelectorAll('.liveCoding');
 
     for (var i = 0; i < codeElementList.length; i++) {
         update(codeElementList[i]);
@@ -63,7 +63,8 @@ var LiveCoding = (function() {
         // else, if it's markup (HTML, SVG, XML...)
         } else if (isMarkup) {
             // replace content 
-            demoElement.innerHTML = codeElement.innerHTML;
+            demoElement.innerHTML = codeElement.textContent;
+
         }
         
         function hasAtLeastOneClass(element, classList) {
@@ -78,6 +79,7 @@ var LiveCoding = (function() {
         function insertAfter(referenceNode, newNode) {
             referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
         }
+
     }
 
 })();
