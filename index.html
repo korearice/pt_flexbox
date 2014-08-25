@@ -44,39 +44,35 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section fullscreen-img="img/img_main.jpg">
-                    <div style="padding:0.5em;background:rgba(255,255,255,0.75)">
+                    <div style="padding:1.2em 0.5em 0.5em;background:rgba(255,255,255,0.75)">
                         <h1 style="font-size:3.5em">Flexible Layout</h1>
                         <h3>플렉스박스로 할 수 있는것들?</h3>
                         <p>
                             <small>Created by <a href="#">UIT개발실</a> / <a href="mailto:kyounghwan.min@nhn.com">MinKyoungHwan</a></small>
                         </p>
+                        <p style="text-align:right;font-size:0.4em;color:#CC9393">이 발표자료는 크롬브라우저/1280*800 해상도에 최적화 되있습니다</p>
                     </div>
 				</section>
 
 				<section>
-					<h2>Introduce</h2>
                     <p><img src="img/profile.png" alt="" style="width:15%;border:0;border-radius:500px"></p>
 					<pre><code data-trim style="max-height:360px;font-size:1.3em;line-height:1.3em">
 #speaker {
-    Name : 민경환 대리
+    Name      : 민경환 대리
     Team      : UIT 개발실
     E-mail    : kyounghwan.min@nhn.com
-    Project   : 네이버 포스트, 스마트에디터, ‘Webkit 사전’서적 집필중
+    Project   : 네이버 포스트, 스마트에디터, 'webkit 사전' 서적 집필중
 }
 
 #speaker:description {
-    content : ‘만나서 반가워요 :)’
+    content : '만나서 반가워요 :)’
 }
 					</code></pre>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
 				</section>
 
 				<!-- Example of nested vertical slides -->
 				<section>
-                    <h3 style="margin-bottom:0.5em">레이아웃을 만든다는것은?</h3>
+                    <h3 style="margin:0.8em 0 0.5em">레이아웃을 만든다는것은?</h3>
                     <img src="img/img_building2.jpg" width="40%" style="border:none;border-radius:15px" alt="">
 				</section>
 
@@ -85,59 +81,25 @@
 					<ul style="margin:0 50px">
 						<li>3단 레이아웃에 가운데 정렬로 해주세요. 네이버 메인처럼...</li>
 						<li>푸터는 항상 하단에 고정시켜주시구요</li>
-						<li>좌측 메뉴의 너비값은 20%인데 해상도가 1000px이상이면 200px로 고정시켜주세요.</li>
-						<li>A박스와 B박스의 간격은 15px이구요...</li>
+						<li>좌측 메뉴의 너비값은 20%인데 해상도가 1000px이상이면<br>200px로 고정시켜주세요.</li>
 						<li style="color:#ccc">...</li>
 					</ul>
 				</section>
 
-				<section>
-					<p><img src="img/img_table4.png" style="border:none;box-shadow:none" alt=""></p>
-					<p style="margin-top:0.4em;color:#444">&lt;td&gt;를 어디서 닫던가?</p>
-					<p style="color:#444">&lt;tr&gt;사이에 이상한게 들어가 있어요...</p>
-					<p style="color:#999">&amp;bsp;&amp;bsp;&amp;bsp;&amp;bsp;&amp;bsp;...</p>
-					<p style="color:#c4c4c4">&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;</p>
-				</section>
-
-				<section>
                     <section>
-                        <p><img src="img/img_css1.png" style="border:none;box-shadow:none" alt=""></p>
-                    </section>
-
-                    <section>
-                        <p><img src="img/img_css21.png" style="border:none;box-shadow:none" alt=""></p>
-                    </section>
-
-                    <section>
-                        <p><img src="img/img_div.jpg" width="50%" style="border:none;box-shadow:none;border-radius:15px" alt=""></p>
-                        <ul style="margin-top:0.2em">
-                            <li>시멘틱 마크업</li>
-                            <li>구조와 표현의 분리</li>
-                            <li>웹표준, 웹접근성</li>
+                        <h3>CSS 2.1</h3>
+                        <ul style="margin-top:0.5em;font-family:monospace">
+                            <li>Grid Layout</li>
+                            <li>float:left; position:absolute;</li>
+                            <li>display:inline-block; display:table-cell;</li>
+                            <li>JavaScript</li>
                             <li style="color:#ccc">...</li>
                         </ul>
                     </section>
 
-                    <section>
-                        <p><img src="img/img_bootstrap.png" width="50%" style="border:none;box-shadow:none;border-radius:15px" alt=""></p>
-                        <ul style="margin-top:0.5em">
-                            <li>그리드 시스템</li>
-                            <li>타이포그래피</li>
-                            <li>테이블, 폼</li>
-                            <li style="color:#ccc">...</li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <p><img src="img/img_change.png" width="40%" style="border:none;box-shadow:none;border-radius:15px" alt=""></p>
-                        <p>우리 코드가 달라졌어요...</p>
-                    </section>
-				</section>
-
-				<section>
                     <section>
                         <p><img src="img/img_devices2.png" width="40%" style="max-width:50%;border:none;box-shadow:none;border-radius:15px" alt=""></p>
-                        <h3 style="margin-top:0.5em">반응형 웹 = <span style="color:#335882">BTS</span>는 내 친구</h3>
+                        <h3 style="margin-top:0.5em">다양한 환경에 최적화 되는 UI</h3>
                         <ul style="margin-top:0.5em">
                             <li>모바일에선 박스가 좌측, 태블릿에선 우측 상단에 붙어야해요...</li>
                             <li>텍스트 길이에 맞춰 박스가 늘어날 순 없을까요?</li>
@@ -155,12 +117,6 @@
                             <li style="color:#ccc">...</li>
                         </ul>
                     </section>
-
-                    <section>
-                        <p><img src="img/img_suarez2.png" width="40%" style="max-width:50%;border:none;box-shadow:none;border-radius:15px" alt=""></p>
-                        <p style="margin-top:0.8em">개발자는 이 모든것을 브라우저에 표현해야합니다.</p>
-                    </section>
-				</section>
 
 				<section>
                     <section>
@@ -193,15 +149,6 @@
 .flexbox_roadmap em{display:inline-block;margin-left:2em;color:#444}
 </style>
                     </section>
-
-                    <section>
-                        <p><img src="img/img_tabatkins.png" width="20%" style="border:none;box-shadow:none;border-radius:50px" alt=""></p>
-                        <p>“Layout solutions are an interesting area in CSS to me.”<br>– Tab Atkins</p>
-                    </section>
-
-                    <section>
-                        <p><img src="img/img_book.png" style="border:none;box-shadow:none" alt=""></p>
-                    </section>
 				</section>
 
                 <section>
@@ -215,7 +162,7 @@
 
                     <section>
                         <p><img src="img/img_flexbox_pagelayout.png" width="60%" style="border:none;box-shadow:none" alt=""></p>
-                        <p>플렉스박스가 페이지 레이아웃에 안좋은 이유</p>
+                        <p>페이지 레이아웃을 플렉스박스로 만드는건 안좋을 수 있다</p>
                     </section>
 
                     <section>
@@ -253,9 +200,9 @@
                             <div>2</div>
                             <div>3</div>
                         </div>
-                        <p style="margin-top:1.2em">플렉스박스는 컨테이너 태그와 아이템태그로 나뉩니다</p>
+                        <p style="margin-top:1.2em">플렉스박스는 컨테이너 태그와 아이템 태그로 나뉩니다</p>
 <style>
-.sample_flexbox_wrap{display:flex;height:12em;padding:0.9em!important;border:0.5em solid #000!important}
+.sample_flexbox_wrap{display:flex;height:10em;padding:0.9em!important;border:0.5em solid #000!important}
 .sample_flexbox_wrap > div{display:flex;align-items:center;justify-content:center;flex:1;margin-left:0.7em!important;border:0.2em solid #929292;font-size:2em}
 .sample_flexbox_wrap > div:first-child{margin-left:0!important}
 </style>
@@ -300,9 +247,12 @@
                         <p style="margin-top:1.2em">Stephen Hay : <a href="http://www.slideshare.net/stephenhay/flexbox-one-giant-leap-for-web-layout-brea-2013" target="_blank">http://www.slideshare.net/stephenhay/flexbox-one-giant-leap-for-web-layout-brea-2013</a></p>
                     </section>
                 </section>
+
                 <section>
                     <section>
-                        <h3 style="margin-bottom:30px">내비게이션</h3>
+                        <h3 style="margin-bottom:30px">1. 내비게이션</h3>
+                    </section>
+                    <section>
                         <div class="code_wrap">
                         <div class="code_view" id="liveCode2">
                         </div>
@@ -340,9 +290,14 @@ background:#444;
 }
 </style>
                     </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3 style="margin-bottom:30px">2. 채팅창</h3>
+                    </section>
 
                     <section>
-                        <h3 style="margin-bottom:30px">채팅창</h3>
                         <div class="code_wrap">
                         <div class="code_view" id="liveCode3">
                         </div>
@@ -399,9 +354,14 @@ background:#444;
 }
 </style>
                     </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>3. 접힘/펼침메뉴</h3>
+                    </section>
 
                     <section>
-                        <h3 style="margin-bottom:30px">펼침메뉴</h3>
                         <div class="code_wrap">
                         <div class="code_view" id="liveCode4">
                         </div>
@@ -482,9 +442,14 @@ background:#444;
 }
 </style>
                     </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>4. 페이지 레이아웃</h3>
+                    </section>
 
                     <section>
-                        <h3 style="margin-bottom:30px">페이지 레이아웃</h3>
                         <div class="code_wrap">
                         <div class="code_view" id="liveCode5">
                         </div>
@@ -510,7 +475,7 @@ background:#444;
 
 <style>
 #liveCode5{background:#ccc}
-#liveCode5 .wrap{font-size:1em}
+#liveCode5 .wrap{font-size:0.5em}
 #liveCode5 header,#liveCode5 footer,#liveCode5 .wrap div > * {
   padding:15px;
   margin:10px;
@@ -521,9 +486,14 @@ background:#444;
 }
 </style>
                     </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>5. 데이터 테이블 소팅</h3>
+                    </section>
 
                     <section>
-                        <h3 style="margin-bottom:30px">데이터 테이블 소팅</h3>
                         <iframe src="sorting.html" frameborder="0" width="100%" height="600" marginwidth="0" marginheight="0" scrolling="yes"></iframe>
                     </section>
                 </section>
@@ -562,25 +532,24 @@ background:#444;
 div[class^="sample_flexwrap"]{display:flex;margin:10px 20px 30px;padding:10px;background:#444;border-radius:0.3em}
 div[class^="sample_flexwrap"] div{display:flex;align-items:center;justify-content:center;margin-left:10px;background:#888;border-radius:0.3em;color:#fff}
 div[class^="sample_flexwrap"] div:last-child{margin-right:0}
-.sample_flexwrap1{height:80px}
+.sample_flexwrap1{height:70px}
 .sample_flexwrap1 div{flex:1}
-.sample_flexwrap2{height:180px;flex-wrap:wrap}
+.sample_flexwrap2{height:170px;flex-wrap:wrap}
 .sample_flexwrap2 div{flex-basis:31%}
 .sample_flexwrap2 div:nth-child(4){margin-top:10px;flex-basis:100%}
-.sample_flexwrap3{height:180px;flex-wrap:wrap}
+.sample_flexwrap3{height:170px;flex-wrap:wrap}
 .sample_flexwrap3 div{flex-basis:31%}
 .sample_flexwrap3 div:nth-child(4){margin-top:10px;flex-basis:100%}
 </style>
                     </section>
 
                     <section>
-                        <p><img src="img/img_pinterest.png" style="border:0;box-shadow:none;border-radius:15px"></p>
+                        <p><img src="img/img_pinterest.png" style="width:50%;border:0;box-shadow:none;border-radius:15px"></p>
                         <p>Masonry layout?</p>
                         <p>Usually say <span style="font-size:1.5em">"Pinterest layout"</span></p>
                     </section>
 
                     <section>
-                        <h3>Pinterest layout</h3>
                         <div class="code_wrap">
                         <div class="code_view" id="liveCode6">
                         </div>
@@ -642,12 +611,12 @@ div[class^="sample_flexwrap"] div:last-child{margin-right:0}
                 </section>
 
                 <section>
-                    <p><img src="img/img_scissors.jpg" width="70%" style="border:0;box-shadow:none;border-radius:15px"></p>
-                    <p>버릴껀 버리고 취할껀 취하자</p>
+                    <p><img src="img/img_scissors.jpg" width="50%" style="border:0;box-shadow:none;border-radius:15px"></p>
+                    <p>취할것은 취하고 버릴것은 버리자</p>
                 </section>
 
                 <section>
-                    <h3>Anything else?</h3>
+                    <h3>또 다른 레이아웃 알고리즘</h3>
                 </section>
 
                 <section>
@@ -657,19 +626,6 @@ div[class^="sample_flexwrap"] div:last-child{margin-right:0}
 
                     <section>
                     <p><img src="img/img_grid2.png" style="width:70%;border:0;box-shadow:none"></p>
-                    </section>
-                </section>
-
-                <section>
-                    <section>
-                        <p>디자인 가이드 맞추려고 노력하지 마세요</h3>
-                    </section>
-
-                    <section>
-                        <p><img src="img/img_capture2.png" width="50%" style="border:none;box-shadow:none" alt=""></p>
-                        <p>너의 너비가 20%인 이유는</p>
-                        <p>width값을 20%로 설정했기때문이 아니다</p>
-                        <p>너이기 때문에 20%인것이다</p>
                     </section>
                 </section>
 
